@@ -49,7 +49,7 @@ button, input, select, textarea { font: inherit; }
 .site-header.is-visible { transform: translateY(0); }
 .brand img { width: 170px; height: 50px; object-fit: contain; object-position: left center; }
 .site-nav { display: flex; align-items: center; gap: 30px; }
-.site-nav a { color: var(--dark-navy); font-size: .67rem; text-transform: uppercase; letter-spacing: .18em; }
+.site-nav a { color: var(--dark-navy); font-size: .82rem; text-transform: uppercase; letter-spacing: .18em; }
 .site-nav a:hover { color: #567b91; }
 .nav-toggle { display: none; border: 0; background: none; color: var(--dark-navy); text-transform: uppercase; letter-spacing: .15em; font-size: .68rem; }
 
