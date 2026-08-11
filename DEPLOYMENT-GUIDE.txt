@@ -1,0 +1,68 @@
+AURALIS VODKA WEBSITE — SIMPLE DEPLOYMENT GUIDE
+================================================
+
+IMPORTANT: This website package is complete. Do not move index.html into another folder.
+The file index.html must remain at the TOP level of your GitHub repository.
+
+PART 1 — CREATE A NEW GITHUB REPOSITORY
+1. Go to github.com and sign in.
+2. Click the + button near the top right.
+3. Choose "New repository".
+4. Repository name: auralis-vodka-website-2026
+5. Choose Public.
+6. Do NOT tick "Add a README file".
+7. Click "Create repository".
+
+PART 2 — UPLOAD THIS WEBSITE
+1. On the new empty repository page, click "uploading an existing file".
+2. Open the folder supplied with this guide.
+3. Select EVERYTHING INSIDE the folder:
+   - index.html
+   - style.css
+   - script.js
+   - thanks.html
+   - netlify.toml
+   - images folder
+4. Drag all of those items into the GitHub upload area.
+5. Wait until all files finish uploading.
+6. At the bottom, click "Commit changes".
+
+CHECK BEFORE CONTINUING:
+When you look at the main GitHub repository page you must be able to see:
+- index.html
+- style.css
+- script.js
+- thanks.html
+- netlify.toml
+- images
+
+Do NOT continue if you only see another folder containing these files.
+
+PART 3 — CREATE A FRESH NETLIFY SITE
+1. Go to app.netlify.com and sign in.
+2. Choose "Add new project" / "Add new site" (wording can vary).
+3. Choose "Import an existing project".
+4. Choose GitHub.
+5. Select repository: auralis-vodka-website-2026
+6. Netlify may show build settings.
+   - Build command: LEAVE BLANK
+   - Publish directory: .
+7. Click Deploy.
+8. Wait for status to show Published / Production deploy.
+9. Click the Netlify site URL to test it.
+
+WHAT YOU SHOULD SEE
+- Full-screen age question first.
+- Clicking YES reveals the wheatfield hero image.
+- The page scrolls through story, bottle, drinks, landscapes and trade form.
+- Clicking NO shows a legal-age exit screen.
+
+CONTACT FORM
+The trade form is configured for Netlify Forms. After the first successful Netlify deploy,
+Netlify should detect the form called "trade-enquiries".
+
+IF SOMETHING LOOKS WRONG
+Do not start deleting random files. Take a screenshot of:
+1. the GitHub repository main file list, and
+2. the Netlify Deploys screen,
+and send those screenshots to ChatGPT.

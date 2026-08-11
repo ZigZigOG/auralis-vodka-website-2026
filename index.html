@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AURALIS Vodka — shaped by Australia. Triple distilled in copper and charcoal filtered for exceptional smoothness." />
+  <title>AURALIS Vodka — Shaped by Australia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="age-locked">
+  <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="age-gate__inner">
+      <img class="age-gate__sun" src="images/auralis-half-sun.png" alt="" aria-hidden="true" />
+      <img class="age-gate__logo" src="images/auralis-logo.png" alt="AURALIS Vodka" />
+      <p class="eyebrow">SHAPED BY AUSTRALIA</p>
+      <h1 id="ageTitle">Are you of legal drinking age?</h1>
+      <div class="age-gate__actions">
+        <button class="button button--primary" id="ageYes" type="button">Yes, enter site</button>
+        <button class="button button--ghost" id="ageNo" type="button">No, exit</button>
+      </div>
+      <p class="age-gate__small">Please enjoy responsibly.</p>
+    </div>
+  </div>
+
+  <div class="exit-screen" id="exitScreen" hidden>
+    <div>
+      <img src="images/auralis-logo.png" alt="AURALIS Vodka" />
+      <p>You must be of legal drinking age to enter this website.</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="AURALIS home">
+      <img src="images/auralis-logo.png" alt="AURALIS Vodka" />
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+      <a href="#story">Our story</a>
+      <a href="#product">The vodka</a>
+      <a href="#serve">Perfect serve</a>
+      <a href="#trade">Trade</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero__image" src="images/hero-wheatfield.jpg" alt="AURALIS Vodka and a vodka lime soda against an Australian wheatfield" />
+      <div class="hero__veil"></div>
+      <div class="hero__content">
+        <img class="hero__logo" src="images/auralis-logo.png" alt="AURALIS Vodka" />
+        <h1 id="heroTitle" class="sr-only">AURALIS Vodka</h1>
+        <p class="hero__tagline">SHAPED BY AUSTRALIA</p>
+        <div class="hero__actions">
+          <a class="button button--light" href="#story">Discover AURALIS</a>
+          <a class="button button--outline-light" href="#trade">Trade enquiries</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <img class="watermark watermark--story" src="images/auralis-half-sun.png" alt="" aria-hidden="true" />
+      <div class="section__inner story__grid">
+        <div>
+          <p class="eyebrow">OUR STORY</p>
+          <h2>Distilled light,<br />captured in a bottle.</h2>
+        </div>
+        <div class="story__copy">
+          <p>Born from the vast horizons of the Australian wheatbelt, AURALIS is distilled light captured in a bottle.</p>
+          <p>Each drop of vodka carries the aura of the sweeping landscape, where ancient soils yield golden grain below a sky of infinite clarity.</p>
+          <p>Shaped by the relentless purity of sun and rains of the inland plains, AURALIS is a vodka born from the earth and refined by the light that defines our home.</p>
+          <p>Handcrafted in Sydney’s inner west, triple distilled in copper and charcoal filtered for exceptional smoothness, AURALIS VODKA delivers a lighter, more effortless drinking experience designed to disappear seamlessly into the perfect serve.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product section" id="product">
+      <div class="section__inner product__grid">
+        <div class="product__bottle-wrap">
+          <div class="product__halo"></div>
+          <img class="product__bottle" src="images/auralis-bottle.png" alt="AURALIS Vodka 700 mL bottle" />
+        </div>
+        <div class="product__details">
+          <p class="eyebrow">THE VODKA</p>
+          <h2>AURALIS VODKA</h2>
+          <p class="product__spec">700 mL <span>·</span> 37% Alc/Vol</p>
+          <ul class="feature-list">
+            <li>Triple distilled in copper</li>
+            <li>Charcoal filtered</li>
+            <li>From pure rainwater</li>
+            <li>Exceptionally clean and smooth</li>
+            <li>Crafted in Sydney</li>
+          </ul>
+          <p class="product__note">Pure, soft and clean tasting — designed to let the ingredients in your drink shine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serve" id="serve" aria-labelledby="serveTitle">
+      <div class="serve__image-wrap">
+        <img src="images/drinks-lineup.jpg" alt="AURALIS Vodka with four classic vodka serves on a bar" />
+      </div>
+      <div class="serve__panel section__inner">
+        <div>
+          <p class="eyebrow">THE PERFECT SERVE</p>
+          <h2 id="serveTitle">Clean taste.<br />Effortless drinking.</h2>
+        </div>
+        <div class="serve__list" aria-label="AURALIS serves">
+          <span>Vodka Lime Soda</span>
+          <span>Vodka Soda</span>
+          <span>Vodka Tonic</span>
+          <span>Espresso Martini</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="landscapes section" aria-labelledby="landscapeTitle">
+      <div class="section__inner landscapes__heading">
+        <p class="eyebrow">INSPIRED BY AUSTRALIA</p>
+        <h2 id="landscapeTitle">Clarity <span>·</span> Purity <span>·</span> Clean Taste</h2>
+        <p>Inspired by the naturally pure air, light and soil of Australia.</p>
+      </div>
+      <div class="landscape-grid">
+        <figure>
+          <img src="images/australian-mountains.jpg" alt="AURALIS Vodka overlooking an Australian mountain landscape" />
+          <figcaption>CLARITY</figcaption>
+        </figure>
+        <figure>
+          <img src="images/hero-wheatfield.jpg" alt="AURALIS Vodka in a golden wheatfield" />
+          <figcaption>PURITY</figcaption>
+        </figure>
+        <figure>
+          <img src="images/australian-coast.jpg" alt="AURALIS Vodka on an Australian beach" />
+          <figcaption>CLEAN TASTE</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="trade section" id="trade">
+      <img class="watermark watermark--trade" src="images/auralis-half-sun.png" alt="" aria-hidden="true" />
+      <div class="section__inner trade__grid">
+        <div class="trade__intro">
+          <p class="eyebrow">TRADE &amp; CONTACT</p>
+          <h2>Bring AURALIS<br />to your venue.</h2>
+          <p>For distribution, venue, event and trade enquiries, send us a note and we’ll be in touch.</p>
+          <div class="trade__contact">
+            <a href="mailto:andrewb@juicepromotions.com">andrewb@juicepromotions.com</a>
+            <a href="tel:+61438454686">+61 438 454 686</a>
+            <span>Andrew Benke</span>
+          </div>
+        </div>
+
+        <form class="trade-form" name="trade-enquiries" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="trade-enquiries" />
+          <p class="hidden-field"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <div class="field-row">
+            <label>Name<input type="text" name="name" autocomplete="name" required /></label>
+            <label>Business<input type="text" name="business" autocomplete="organization" /></label>
+          </div>
+          <div class="field-row">
+            <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+          </div>
+          <label>Enquiry type
+            <select name="enquiry-type">
+              <option value="Trade / venue">Trade / venue</option>
+              <option value="Distribution">Distribution</option>
+              <option value="Events">Events</option>
+              <option value="Media">Media</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="button button--primary" type="submit">Send enquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="privacy" id="privacy">
+      <div class="section__inner privacy__inner">
+        <h2>Privacy</h2>
+        <p>Information submitted through this site is used only to respond to your enquiry and manage relevant business communications. Please do not submit sensitive personal information through this form.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <img src="images/auralis-logo.png" alt="AURALIS Vodka" />
+      <div class="site-footer__links">
+        <a href="#trade">Contact</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#" aria-label="Instagram — coming soon" title="Instagram — coming soon">Instagram</a>
+      </div>
+      <div class="site-footer__responsible">
+        <span>AURALIS VODKA</span>
+        <span>Please enjoy responsibly.</span>
+        <span>For adults of legal drinking age only.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
