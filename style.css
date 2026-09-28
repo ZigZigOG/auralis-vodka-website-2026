@@ -93,9 +93,7 @@ button, input, select, textarea { font: inherit; }
 
 .serve__image-wrap {
   width: 100%;
-  height: 38vw;
-  max-height: 620px;
-  min-height: 480px;
+  height: 360px;
   overflow: hidden;
 }
 
