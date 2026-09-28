@@ -87,33 +87,46 @@ button, input, select, textarea { font: inherit; }
 .feature-list li { padding: 14px 0; border-bottom: 1px solid rgba(16,34,56,.16); color: var(--dark-navy); letter-spacing: .04em; }
 .product__note { max-width: 520px; margin-top: 30px; color: #6d7276; }
 
-.serve { background: var(--white); }
+.serve {
+  background: var(--white);
+}
 
 .serve__image-wrap {
   width: 100%;
-  height: auto;
+  height: 38vw;
+  max-height: 620px;
+  min-height: 480px;
   overflow: hidden;
 }
 
 .serve__image-wrap img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center 52%;
 }
 
 .serve__panel {
-  padding: clamp(60px, 7vw, 100px) 5vw;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 70px 0 80px;
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: clamp(80px, 10vw, 160px);
+  grid-template-columns: 42% 58%;
+  gap: 80px;
   align-items: start;
 }
 
+.serve__panel > div:first-child {
+  width: 100%;
+}
+
 .serve__list {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 60px;
   border-top: 1px solid rgba(16,34,56,.18);
 }
 
