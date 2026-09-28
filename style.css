@@ -93,14 +93,16 @@ button, input, select, textarea { font: inherit; }
 
 .serve__image-wrap {
   width: 100%;
-  height: auto;
+  height: 440px;
   overflow: hidden;
 }
 
 .serve__image-wrap img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center 68%;
 }
 
 .serve__panel {
